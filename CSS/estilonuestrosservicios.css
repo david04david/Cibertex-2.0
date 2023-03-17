@@ -1,0 +1,557 @@
+body{
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background: rgb(54,83,71);
+    background: linear-gradient(180deg, rgba(54,83,71,1) 57%, rgba(85,99,67,1) 73%, rgba(112,113,63,1) 84%, rgba(184,134,11,1) 100%);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header{
+    display: flex;
+    background-image:url(../IMG/fondoheader.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    border-bottom: 5px solid darkgoldenrod;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 160%;
+    color: darkgoldenrod;
+}
+
+.logo img{
+    height: 100px;
+    width: auto;
+    margin-right: 3%;
+}
+
+a{
+    position: relative;
+    text-decoration:none ;
+    color:darkgoldenrod;
+    font-size: 130%;
+    padding: 0 10px;
+}
+
+/*Animación nav*/
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+nav a:hover{
+    color: rgb(255, 255, 255);
+}
+
+/*Clases de contenido*/
+.botonmenu{
+    display: none;
+}
+
+h1{
+    font-size: 55px;
+    text-align: center;
+    color: darkgoldenrod
+}
+
+h2{
+    color: #b8860b;
+    text-align: center;
+    text-shadow: 3px 1px 2px rgba(0,0,0,0.6);
+}
+
+dl{
+    font-size: 20px;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.divimg{
+    height: 75vh;
+    display: block;
+    margin-left: 470px;
+}
+
+/*Cartas de producto*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display:inline-table;
+}
+      
+.price {
+    color: grey;
+    font-size: 22px;
+}
+      
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+      
+.card button:hover {
+    opacity: 0.7;
+}
+
+.card1{
+    margin-left: 2%;
+    margin-top: 0%;
+}
+
+.card5{
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.card9{
+    margin-left: 18%;
+    margin-top: 5%;
+}
+
+.h2cibersec{
+    width: 20%;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-size: 200%;
+    text-align: center;
+    text-shadow: 1px 5px 15px rgba(90, 179, 238, 0.60);
+}
+
+.h2web{
+    margin-top: 15%;
+    margin-right: 3.5%;
+    font-size: 200%;
+    text-shadow: 1px 5px 15px rgba(90, 179, 238, 0.60);
+}
+
+/*Footer*/
+footer{
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-weight:700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60vh;
+}
+
+/*Ajuste de pantallas*/
+@media screen and (min-width: 1024px) {
+
+    .servicios{
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        justify-content: space-around;
+        font-size: 90%;
+    }
+
+}
+
+@media  screen and (max-width: 916px) {
+
+    body{
+        width: 98%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 100%;
+        margin-bottom: 10%;
+    }
+
+    header{
+        width: 100%;
+        height: 190px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: 10%;
+        margin-top: 90%;
+        font-size: 10vw;
+    }
+
+    nav{
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 7%;
+        display: none;
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .h2cibersec{
+        margin-top: 4%;
+        margin-left: 28%;
+        font-size: 180%;
+    }
+
+    .card1{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card2{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card3{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card4{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card5{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card6{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card7{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card8{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    /*.h2web{
+        margin-left: 0%;
+    }*/
+
+    .card9{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+    .card10{
+        margin-left: 15%;
+        margin-top: 5%;
+        font-size: 110%;
+        width: 70%;
+        max-width: none;
+    }
+
+
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        margin-left: 82%;
+        margin-top: -18%;
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        width: 98%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 100%;
+        margin-bottom: 10%;
+    }
+
+    header{
+        width: 100%;
+        height: 120px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: 10%;
+        margin-top: 90%;
+        font-size: 10vw;
+    }
+
+    nav{
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 7%;
+        display: none;
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .h2cibersec{
+        margin-top: 4%;
+        margin-left: 10%;
+        font-size: 180%;
+    }
+
+    .card1{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card2{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card3{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card4{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card5{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card6{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card7{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .card8{
+        margin-top: 5%;
+        font-size: 100%;
+    }
+
+    .h2web{
+        margin-left: -1%;
+    }
+
+    .card9{
+        margin-top: 10%;
+        font-size: 100%;
+    }
+
+    .card10{
+        margin-top: 8%;
+        font-size: 100%;
+    }
+
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        margin-left: 80%;
+        margin-top: -20%;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+}

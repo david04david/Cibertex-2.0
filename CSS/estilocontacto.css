@@ -1,0 +1,411 @@
+body{
+    height: 100%;
+    width: 100%;
+    font-family: sans-serif;
+    margin: 0;
+    background: rgb(54,83,71);
+    background: linear-gradient(180deg, rgba(54,83,71,1) 57%, rgba(85,99,67,1) 73%, rgba(112,113,63,1) 84%, rgba(184,134,11,1) 100%);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+header{
+    display: flex;
+    background-image:url(../IMG/fondoheader.jpg);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 5px solid darkgoldenrod;
+}
+
+/*Logo y Nombre*/
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 160%;
+    color: darkgoldenrod;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 15px;
+}
+
+a{
+    position: relative;
+    text-decoration:none ;
+    color:darkgoldenrod;
+    font-size: 130%;
+    padding: 0 10px;
+}
+
+/*Animación nav*/
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+/*Barra de navegación*/
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+nav a:hover{
+    color: white;
+    transition: 0.7s;
+}
+
+/*Contenido*/
+.botonmenu{
+    display: none;
+}
+
+h1{
+    font-size: 55px; 
+    text-align: center; 
+    color: darkgoldenrod
+}
+
+h2{
+    text-shadow: 3px 1px 2px rgba(0,0,0,0.6);
+}
+
+.encuentranos{
+    color: #b8860b;
+    text-align: center;
+    font-size: 200%;
+    text-shadow: 1px 5px 15px rgba(90, 179, 238, 0.30); 
+}
+
+p {
+    font-size: 20px; 
+    text-align: center;
+}
+
+.imagen{
+    margin-left: 40%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+    height: auto;
+}
+
+.botonformulario{
+    margin-left: 40%;
+    text-align: center;
+    background-color: #b8860b;
+    border-radius: 50px;
+    width: 300px;
+    transition: 0.7s;
+}
+
+.botonformulario > a{
+    color: white;
+    text-decoration: none;
+}
+
+.botonformulario:hover{
+    transition: 0.7;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px 5px white;
+}
+
+address{
+    text-align: left;
+    margin:1em;
+}
+
+iframe{
+    width: 50%;
+    height: 500px;
+    margin-left: 25%;
+    margin-bottom: 4%;
+    margin-top: 0.5%;
+}
+
+footer{
+    width: 100%;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*Ajuste de pantallas*/
+
+@media (min-width: 1024px){
+
+}
+
+@media (max-width: 916px){
+
+    body{
+        width: 100%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 60%;
+        margin-top: -30%;
+    }
+
+    header{
+        width: auto;
+        height: 190px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: -15%;
+        margin-top: 50%;
+        font-size: 10vw;
+    }
+
+    nav{
+        display: none;
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .imagen{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    iframe{
+        margin-left: 25%;
+        width: 50%; 
+        height: auto;
+    }
+
+    p{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        margin-left: 82%;
+        margin-top: -19%;
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+
+}
+
+@media (max-width: 480px){
+    body{
+        width: 100%;
+    }
+
+    .logo{
+        width: 10%;
+        height: auto;
+    }
+
+    .logo img{
+        width: 150%;
+        height: auto;
+        margin-left: 60%;
+        margin-top: 10%;
+    }
+
+    header{
+        width: auto;
+        height: 130px;
+        display:inline-block;
+    }
+
+    h2.nombre-empresa{
+        margin-left: -20%;
+        margin-top: 115%;
+        font-size: 10vw;
+    }
+
+    nav{
+        display: none;
+        font-size: 50%;
+        margin-top: -15%;
+        margin-bottom: 3%;
+        margin-left: 0%;
+
+    }
+
+    a.logo{
+        cursor: default !important;
+        pointer-events: none;
+        padding-right: 40%;
+    }
+
+    .imagen{
+        width: 50%;
+        height: auto;
+        margin-left: 25%;
+    }
+
+    iframe{
+        margin-left: 25%;
+        width: 50%; 
+        height: auto;
+    }
+
+    p{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+/*Botón menú*/
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: darkgoldenrod;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    }
+.botonmenu{
+    display: block;
+    color:darkgoldenrod;
+    font-weight: bold;
+    margin-left: 80%;
+    margin-top: -20%;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+
+p .botonmenu{
+    color:white;
+}
+
+}

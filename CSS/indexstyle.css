@@ -1,0 +1,887 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    width: 99.99%;
+    display: inline-block;
+    padding-bottom: 2%;
+    background: linear-gradient(180deg, rgba(54,83,71,1) 57%, rgba(85,99,67,1) 73%, rgba(112,113,63,1) 84%, rgba(184,134,11,1) 100%);
+    background-repeat: no-repeat;
+}
+
+/*Encebezado (Header)*/
+header{
+    display: flex;
+    background-color: #365347;
+    padding: 0.5%;
+    justify-content: space-between;
+    border-bottom: darkgoldenrod 5px solid;
+}
+
+.botonmenu{
+    display: none;
+}
+
+.logoimg{
+    grid-area: logo;
+    width: 7%;
+    margin-left: 2%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    height: auto;
+    border-radius: 50px;
+    animation-name: logoimg;
+    animation-duration: 2.5s;
+}
+    @keyframes logoimg{
+        from{
+            margin-left: 100%;
+            transform: rotate(359deg);
+        }
+
+        to{
+            margin-left: 2%;
+            transform: rotate(0deg);
+        }
+    }
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+a{
+    color: darkgoldenrod;
+    position: relative;
+    text-decoration:none ;
+    font-family: sans-serif;
+    font-size: 140%;
+    padding: 0 10px;
+}
+
+/*Animación nav*/
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:after{
+    content: "";
+    position: absolute;
+    background-color: darkgoldenrod;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.6s;
+}
+
+a:hover:after{
+    width: 100%;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 20px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+/*Parte 1*/
+.parte1{
+    margin-top: 0%;
+    background-image: url(../IMG/fondoparte1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    height: 72vh;
+    display: flex;
+    align-items: center;
+}
+
+/*Contenido Parte 1*/
+.contenidop1{
+    text-align: left;
+    animation-name: contenidop1;
+    animation-duration: 1s;
+}
+    @keyframes contenidop1 {
+        from{
+            margin-left: 100%;
+            width: 300%;
+        }
+
+        to{
+            margin-left: -2%;
+            width: 100%;
+        }
+    }
+
+.h1logo{
+    color: darkgoldenrod;
+    font-size: 550%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.eslogan{
+    font-style: italic;
+    font-size: 120%;
+    margin-left: 5%;
+    color: white;
+}
+
+.explicacion{
+    margin-left: 5%;
+    margin-top: 1%;
+    font-size: 150%;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 1px 2px rgba(48, 48, 48, 0.8);
+}
+
+.botonvermas{
+    text-shadow: 3px 1px 2px rgba(255, 255, 255, 0.8);
+    background-color: rgb(184, 134, 11);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 5%;
+    margin-top: 2%;
+    width: 200px;
+}
+
+.botonvermas:hover{
+    transition: 0.4s;
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px 5px rgb(255, 255, 255);
+}
+
+/*Etiquetas*/
+.contenedortarjetas{
+    display: grid;
+    grid-template-areas:
+      ' tarjeta1 tarjeta2 tarjeta3 tarjeta4';
+    justify-content: center;
+    grid-gap: 5%;
+    margin-top: -1.75%;
+    height: 12vh;
+    font-family: Arial, Helvetica, sans-serif;
+    animation-name: tarjetas;
+    animation-duration: 1s;
+}
+    @keyframes tarjetas{
+        from{
+            margin-top: -20%;
+        }
+
+        to{
+            margin-top: -2%;
+        }
+    }
+
+.tarjeta1{
+    background-color: rgb(54, 83, 71);
+    grid-area: tarjeta1;
+    width: 20vw;
+    border-radius: 20px;
+    border: darkgoldenrod 2px solid;
+    font-size: 70%;
+    color: white;
+    padding-top: 1.5%;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta1 > h2{
+    text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta2{
+    background-color: rgb(54, 83, 71);
+    grid-area: tarjeta2;
+    width: 20vw;
+    border-radius: 20px;
+    border: darkgoldenrod 2px solid;
+    font-size: 70%;
+    color: white;
+    padding-top: 1.5%;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+    
+}
+
+.tarjeta2 > h2{
+    text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta3{
+    background-color: rgb(54, 83, 71);
+    grid-area: tarjeta3;
+    width: 20vw;
+    border-radius: 20px;
+    border: darkgoldenrod 2px solid;
+    font-size: 70%;
+    color:white;
+    padding-top: 1.5%;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta3 > h2{
+    text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta4{
+    background-color: rgb(54, 83, 71);
+    grid-area: tarjeta4;
+    width: 20vw;
+    border-radius: 20px;
+    border: darkgoldenrod 2px solid;
+    font-size: 70%;
+    color:white;
+    padding-top: 1.5%;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.15);
+}
+
+.tarjeta4 > h2{
+    text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+/*Parte 2*/
+.parte2h2ciber{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgoldenrod;
+    text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+}
+
+/*Por qué nos necesitas*/
+.parte2-porque{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #365347;
+    width: 90%;
+    border-radius: 20px;
+    border: darkgoldenrod solid 4px;
+    display: inline-block;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.parte2-porque > h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin-left: 1%;
+}
+
+.por-que-nos-necesitas{
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-right: 15%;
+    font-size: 110%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Qué ofrecemos*/
+.parte2-que{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #365347;
+    width: 90%;
+    border-radius: 20px;
+    border: darkgoldenrod solid 4px;
+    display: inline-block;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.parte2-que > h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin-left: 1%;
+}
+
+.que-ofrecemos{
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-right: 15%;
+    font-size: 110%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Mapa en vivo de ataques*/
+.parte2-mapa{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #365347;
+    width: 90%;
+    border-radius: 20px;
+    border: darkgoldenrod solid 4px;
+    display: inline-block;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.parte2-mapa > h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin-left: 1%;
+}
+
+.parte2-mapa-texto{
+    margin-top: 1%;
+    margin-left: 5%;
+    padding-right: 15%;
+    font-size: 110%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mapa-en-vivo-iframe{
+    float: right;
+    padding-right: 7%;
+    padding-bottom: 2%;
+}
+
+/*Desarrollo Web*/
+.parte2h2web{
+    text-align: center;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkgoldenrod;
+    text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+}
+
+.parte2-web{
+    margin-left: 5%;
+    margin-top: 2%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #365347;
+    width: 90%;
+    border-radius: 20px;
+    border: darkgoldenrod solid 4px;
+    display: inline-block;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.7), 0 0.1rem 0.2rem rgba(0, 0, 0, 0.5);
+}
+
+.parte2-web > h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 200%;
+    margin-left: 1%;
+}
+
+footer{
+    position: absolute;
+    margin-top: 1%;
+    width: 100%;
+    height: 20px;
+    background-color: black;
+    color:white;
+    text-align: center;
+}
+
+/*Responsive*/
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (max-width: 916px) {
+
+    nav{
+        display: none;
+    }
+    
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        margin-right: 10%;
+        margin-top: 1%;
+        text-shadow: 2px 1px 1px rgb(0, 0, 0);
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+
+
+    .contenedortarjetas{
+        display: grid;
+        grid-template-areas:
+        'tarjeta1 tarjeta2'
+        'tarjeta3 tarjeta4';
+        margin-top: -14%;
+        grid-gap: 10%;
+        padding: 10%;
+        height: 25vh;
+    }
+
+    .tarjeta1{
+        grid-area: tarjeta1;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .tarjeta2{
+        grid-area: tarjeta2;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .tarjeta3{
+        grid-area: tarjeta3;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .tarjeta4{
+        grid-area: tarjeta4;
+        width: 90%;
+        margin-left: 5%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+    }
+
+    /*Parte 2*/
+
+    /*¿Por qué nos necesitas?*/
+    .parte2h2ciber{
+        text-align: center;
+        font-size: 4vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgoldenrod;
+        text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+        margin-top: 10%;
+        margin-bottom: 3%;
+    }
+
+    .parte2-porque{
+        width: 89%;
+        margin-left: 4%;
+    }
+
+    .parte2-porque > h2{
+        font-size: 4vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .por-que-nos-necesitas{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 2vw;
+    }
+
+    /*¿Qué ofrecemos?*/
+    .parte2-que{
+        width: 89%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+
+    .parte2-que > h2{
+        font-size: 4vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .que-ofrecemos{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 2vw;
+    }
+    
+    /*Mapa de ataques en vivo*/
+    .parte2-mapa{
+        width: 89%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    
+    .parte2-mapa > h2{
+        font-size: 4vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .mapa-en-vivo-iframe{
+        margin-top: 5%;
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .parte2-mapa-texto{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 2vw;
+    }
+
+    /*Desarrollo web*/
+    .parte2h2web{
+        text-align: center;
+        font-size: 4vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgoldenrod;
+        text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+        margin-top: 10%;
+    }
+
+    .parte2-web{
+        width: 89%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+    }
+
+    .parte2-web > h2{
+        font-size: 4vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .propia-web{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body{
+        width: 99.9%;
+    }
+
+    .logoimg{
+        width: 20%;
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        animation-name: logoimg;
+        animation-duration: 2.3s;
+    }
+        @keyframes logoimg{
+            from{
+                margin-left: 100%;
+                transform: rotate(359deg);
+            }
+
+            to{
+                margin-left: 5%;
+                transform: rotate(0deg);
+            }
+        }
+    
+    /*Botón menú*/
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: darkgoldenrod;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+      }
+      
+      @media screen and (max-height: 450px) {
+        .overlay a {font-size: 20px}
+        .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+        }
+        }
+    .botonmenu{
+        display: block;
+        color:darkgoldenrod;
+        font-weight: bold;
+        width: 1%;
+        margin-right: 15%;
+        margin-top: 5%;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    }
+
+    span .botonmenu{
+        font-size: 100px;
+    }
+
+    p .botonmenu{
+        color:white;
+    }
+
+    nav{
+        display: none;
+    }
+
+    /*Parte1*/
+    .parte1{
+        height:33vh;
+        border-bottom: white solid 3px;
+    }
+
+    .contenidop1{
+        font-size: 2vw;
+        padding-right: 2%;
+    }
+
+    .botonvermas{
+        width: 100px;
+    }
+
+    /*Tarjetas*/
+    .contenedortarjetas{
+        height: 75vh;
+        margin-top: 4%;
+        margin-right: 8%;
+        display: grid;
+        grid-template-areas: 
+        'tarjeta1'
+        'tarjeta2'
+        'tarjeta3'
+        'tarjeta4';
+        grid-gap: 2%;
+        font-size: 5vw;
+    }
+
+    .tarjeta1{
+        grid-area: tarjeta1;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .tarjeta2{
+        grid-area: tarjeta2;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .tarjeta3{
+        grid-area: tarjeta3;
+        width: 90%;
+        margin-left: 10%;
+    }
+
+    .tarjeta4{
+        grid-area: tarjeta4;
+        width: 90%;
+        margin-left: 10%;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 1%;
+    }
+
+    /*Parte 2*/
+
+    /*¿Por qué nos necesitas?*/
+    .parte2h2ciber{
+        text-align: center;
+        font-size: 8vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgoldenrod;
+        text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+        margin-bottom: 3%;
+    }
+
+    .parte2-porque{
+        width: 89%;
+        margin-left: 4%;
+    }
+
+    .parte2-porque > h2{
+        font-size: 10vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .por-que-nos-necesitas{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 5vw;
+    }
+
+    /*¿Qué ofrecemos?*/
+    .parte2-que{
+        width: 89%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+
+    .parte2-que > h2{
+        font-size: 10vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .que-ofrecemos{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 5vw;
+    }
+    
+    /*Mapa de ataques en vivo*/
+    .parte2-mapa{
+        width: 89%;
+        margin-left: 4%;
+        margin-top: 10%;
+    }
+    
+    .parte2-mapa > h2{
+        font-size: 10vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .mapa-en-vivo-iframe{
+        margin-top: 5%;
+        width: 80vw;
+        height: 40vh;
+    }
+
+    .parte2-mapa-texto{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 5vw;
+    }
+
+    /*Desarrollo web*/
+    .parte2h2web{
+        text-align: center;
+        font-size: 8vw;
+        font-family: Arial, Helvetica, sans-serif;
+        color: darkgoldenrod;
+        text-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 1);
+        margin-top: 10%;
+    }
+
+    .parte2-web{
+        width: 89%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+    }
+
+    .parte2-web > h2{
+        font-size: 10vw;
+        padding-top: 1%;
+        text-shadow: 2px 1px 4px rgb(184, 134, 11, 1);
+    }
+
+    .propia-web{
+        padding-left: 2%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        font-size: 5vw;
+    }
+
+    /*Footer*/
+    footer{
+        text-align: center;
+        position:static;
+        font-size: 5vw;
+        width: 100%;
+        background-color: black;
+        color:white;
+        margin-bottom: 0%;
+    }
+}
