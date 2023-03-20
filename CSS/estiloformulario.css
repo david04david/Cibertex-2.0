@@ -165,6 +165,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1.25rem;
+  margin-right: 1%;
 }
 .formulario label {
   display: block;
@@ -236,7 +237,7 @@ footer{
     }
 
     .botonhome{
-        width: 10%;
+        width: 50px;
     }
 
     .formulario{

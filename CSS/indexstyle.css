@@ -404,6 +404,14 @@ footer{
     nav{
         display: none;
     }
+
+    .logoimg{
+        width: 15%;
+    }
+
+    .contenidop1{
+        padding-right: 5%;
+    }
     
     /*Botón menú*/
     .overlay {
@@ -460,7 +468,7 @@ footer{
         color:darkgoldenrod;
         font-weight: bold;
         margin-right: 10%;
-        margin-top: 1%;
+        margin-top: 3%;
         text-shadow: 2px 1px 1px rgb(0, 0, 0);
     }
 
@@ -479,6 +487,15 @@ footer{
         padding: 10%;
         height: 25vh;
     }
+        @keyframes tarjetas{
+            from{
+                margin-top: -30%;
+            }
+
+            to{
+                margin-top: -14%;
+            }
+        }
 
     .tarjeta1{
         grid-area: tarjeta1;
@@ -730,7 +747,7 @@ footer{
     /*Tarjetas*/
     .contenedortarjetas{
         height: 75vh;
-        margin-top: 4%;
+        margin-top: 1%;
         margin-right: 8%;
         display: grid;
         grid-template-areas: 
@@ -741,6 +758,15 @@ footer{
         grid-gap: 2%;
         font-size: 5vw;
     }
+        @keyframes tarjetas{
+            from{
+                margin-top: -30%;
+            }
+
+            to{
+                margin-top: 0.8%;
+            }
+        }
 
     .tarjeta1{
         grid-area: tarjeta1;
@@ -877,7 +903,6 @@ footer{
     /*Footer*/
     footer{
         text-align: center;
-        position:static;
         font-size: 5vw;
         width: 100%;
         background-color: black;
