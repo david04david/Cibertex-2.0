@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David García Rodríguez">
+    <meta name="Description" content="CIBERTEX">
+    <meta name="keywords" content="ciberseguridad, CIBERTEX, HTML, CSS, Java script, Protección, redes, pagina web">
+    <title>Nuestros Servicios</title>
+    <!--Enlace CSS-->
+    <link rel="stylesheet" href="../CSS/estilonuestrosservicios.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../Favicon/faviconnuestrosservicios.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../Favicon/faviconnuestrosservicios.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Favicon/faviconnuestrosservicios.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../Favicon/faviconnuestrosservicios.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Favicon/faviconnuestrosservicios.ico/favicon-16x16.png">
+    <link rel="manifest" href="../Favicon/faviconnuestrosservicios.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../Favicon/faviconnuestrosservicios.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/95eacc2461.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Encabezado-->
+    <header>
+        <a href="../index.html" class="logo">
+            <img src="../IMG/1.png" alt="logocibertex" loading="lazy" height="110em" width="auto" style="border-radius: 30px;">
+            <h2 class="nombre-empresa">CIBERTEX</h2>
+        <nav>
+            <a href="../index.html"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="Nuestros Servicios.html"><i class="fa-solid fa-shield-halved"></i>Servicios</a>
+            <a href="Sobre Nosotros.html"><i class="fa-solid fa-users"></i>Nosotros</a>
+            <a href="Contacto.html"><i class="fa-solid fa-phone"></i>Contacto</a>
+        </nav>
+<!--Menú desplegable solo movil y tablet-->
+        <div class="botonmenu">
+          <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                  <a href="../index.html"><i class="fa-solid fa-house"></i>INICIO</a>
+                  <a href="Nuestros Servicios.html"><i class="fa-solid fa-shield-halved"></i>SERVICIOS</a>
+                  <a href="Sobre Nosotros.html"><i class="fa-solid fa-users"></i>NOSOTROS</a>
+                  <a href="Contacto.html"><i class="fa-solid fa-phone"></i>CONTACTO</a><br><br>
+                  <hr>
+                  <p style="color: white;">Redes Sociales
+                  <a href="https://www.instagram.com/cibertex/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                  </div>
+              </div>
+              <span style="font-size:30px;cursor:pointer" class="" onclick="openNav()">&#9776;</span>
+              <script>
+              function openNav() {
+                  document.getElementById("myNav").style.width = "100%";
+              }
+              function closeNav() {
+                  document.getElementById("myNav").style.width = "0%";
+              }
+              </script>
+          </div>
+    </header>
+<!--Contenido-->
+<h2 class="h2cibersec">~<u>CIBERSEGURIDAD</u>~</h2>
+<div class="servicios">
+  <!--Analisis de vulnerabilidades-->
+    <div class="card card1">
+      <img src="../IMG/vulnerabilidades.jpg" alt="Analisis de Vulnerabilidades" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%; text-shadow: 5px 2px 11px rgba(0,0,0,1);">Analisis de vulnerabilidades</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Haremos un examen completo para identificar los sistemas en la red, evitando posibles vulnerabilidades, amenazas o posibles brechas de seguridad, tanto lógica como fisicamente</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Pentesting-->
+    <div class="card card1">
+      <img src="../IMG/pentesting2.jpg" alt="Test de Intrusión" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Test de Intrusión (Pentesting)</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Realizaremos un ataque totalmente controlado a los sistemas informaticos comprobando la seguridad de los sistemas y buscando posibles debilidades en ellos</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Web security-->
+    <div class="card card1 card3">
+      <img src="../IMG/seguridadweb.png" alt="Web Security" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Web Security</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Comprobaremos y nos aseguraremos de la seguridad de su sitio web (Certificados, conexiones, autorizaciones...)</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Revisión Wifi y Red Privada-->
+    <div class="card card1">
+      <img src="../IMG/lansecurity.jpg" alt="Web Security" style="width:97%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Revisión Wifi y Red Privada</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Analizaremos la conexión WIFI e implementaremos metodos para aumentar su seguridad y privacidad</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Monitorización continua-->
+    <div class="card card5">
+      <img src="../IMG/monitorización.jpg" alt="Web Security" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Monitorización Continua</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Realizaremos un seguimiento 24/7 de su red, en caso de amenazas o fallas nos pondremos en contacto urgentemente con usted</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--DLP-->
+    <div class="card card5">
+      <img src="../IMG/dlp (2).jpg" alt="Web Security" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Data Loss Prevention (DLP)</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>También llamado prevención de perdida de datos, comprobaremos sus sistemas de ficheros y los aseguraremos de posibles perdidas o ataques</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Backup-->
+    <div class="card card5">
+      <img src="../IMG/backup.png" alt="Web Security" style="width:100%" loading="lazy">
+      <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);"> Copias de Seguridad (Backup)</h2>
+      <p class="price">Consultar Presupuesto</p>
+      <p>Realizaremos, automatizaremos e implementaremos las copias de seguridad, junto a diversos protocolos de actuación en caso de perdida o ataque</p>
+      <a href="Formulario.html"><p><button>Consultar</button></p></a>
+    </div>
+  <!--Charlas de concienciación-->
+  <div class="card card5">
+    <img src="../IMG/charla.png" alt="Web Security" style="width:100%" loading="lazy">
+    <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Charlas de Concienciación</h2>
+    <p class="price">Consultar Presupuesto</p>
+    <p>Realizaremos charlas de concienciación en su empresa para todos sus empleados o responsables informaticos para concienciar y enseñar la importancia de la ciberseguridad.
+      También enseñaremos como deben actuar y como usar con seguridad los sistemas informaticos de la empresa
+    </p>
+    <a href="Formulario.html"><p><button>Consultar</button></p></a>
+  </div>
+</div>
+<h2 class="h2web">~<u>DESARROLLO WEB</u>~</h2>
+  <!--Diseño y desarrollo web-->
+  <div class="card card9">
+    <img src="../IMG/desarrolloweb.jpg" alt="Diseño y desarrollo web" style="width:100%" loading="lazy">
+    <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Diseño y Desarrollo Web</h2>
+    <p class="price">Consultar Presupuesto</p>
+    <p>Diseñaremos y desarollaremos una pagina web a tu gusto y completamente a medida</p>
+    <a href="Formulario.html"><p><button>Consultar</button></p></a>
+  </div>
+  <!--Asesoramiento web-->
+  <div class="card card9">
+    <img src="../IMG/consultoriaweb.jpg" alt="Asesoramiento Web" style="width:100%" loading="lazy">
+    <h2 style="color: darkgoldenrod; font-size: 200%;text-shadow: 5px 2px 11px rgba(0,0,0,1);">Asesoramiento Web</h2>
+    <p class="price">Consultar Presupuesto</p>
+    <p>Le asesoraremos y le ayudaremos con la creación, gestión y manteminieto de su página web</p>
+    <a href="Formulario.html"><p><button>Consultar</button></p></a>
+  </div>
+<!--Footer-->
+<footer>
+    CIBERTEX @ 2022
+</footer>
+</body>
+</html>

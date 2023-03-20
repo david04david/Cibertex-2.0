@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David García Rodríguez">
+    <meta name="Description" content="CIBERTEX">
+    <meta name="keywords" content="ciberseguridad, CIBERTEX, HTML, CSS, Java script, Protección, redes, pagina web">
+    <title>Formulario de Presupuesto</title>
+    <!--Enlace CSS-->
+    <link rel="stylesheet" href="../CSS/estiloformulario.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="Favicon/faviconcontacto.ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="Favicon/faviconcontacto.ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="Favicon/faviconcontacto.ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="Favicon/faviconcontacto.ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="Favicon/faviconcontacto.ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="Favicon/faviconcontacto.ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="Favicon/faviconcontacto.ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="Favicon/faviconcontacto.ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="Favicon/faviconcontacto.ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="Favicon/faviconcontacto.ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicon/faviconcontacto.ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="Favicon/faviconcontacto.ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicon/faviconcontacto.ico/favicon-16x16.png">
+    <link rel="manifest" href="Favicon/faviconcontacto.ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="Favicon/faviconcontacto.ico/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/95eacc2461.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Contenido-->
+<div>    
+    <h3>Formulario de Presuspuesto</h3>
+    <p style="color:white">Una vez recibamos su formulario nos pondremos en contacto con usted
+    <div class="botonhome">
+        <div class="div2">
+        <a href="../index.html" style="font-size: 30px;"><i class="fa-solid fa-house"></i></a>
+        </div>
+    </div>
+        <div class="contenedor">
+            <h1 class="logo"><span class="nombre-empresa2">CIBERTEX</span></h1>
+            <div class="wrapper animated bounceInLeft">
+              <div class="info-empresa">
+                <h3>CIBERTEX</h3>
+                <ul class="servicios">
+                  <li><i class="fa fa-map-marker"></i> Calle del Contubernio, 49. 88880. Madrid (Madrid)</li>
+                  <li><i class="fa fa-mobile"></i> 911 111 111</li>
+                  <li><i class="fa fa-envelope"></i> contacto@cibertex.es</li>
+                </ul>
+              </div>
+              <div class="contacto">
+                <h3>Enviar Correo</h3>
+                <form class="formulario">
+                  <p>
+                    <label>Nombre</label>
+                    <input type="text" name="nombre" required>
+                  </p>
+                  <p>
+                    <label>Empresa</label>
+                    <input type="text" name="empresa">
+                  </p>
+                  <p>
+                    <label>Correo</label>
+                    <input type="email" name="email" required>
+                  </p>
+                  <p>
+                    <label>Teléfono</label>
+                    <input type="text" name="teléfono" required>
+                  </p>
+                  <p>
+                    <label class="full">Tamaño de Empresa</label>
+                    <input type="checkbox" value="Microempresa">Microempresa <br> (Hasta 10 empleados)
+                    <input type="checkbox" value="Pequeña">Pequeña <br> (Más de 10 hasta 50 empleados)
+                    <input type="checkbox" value="Mediana">Mediana <br> (Más de 50 hasta 250 empleados)
+                    <input type="checkbox" value="Grande">Grande (Más de 250 empleados)
+                  </p>
+                  <p>
+                    <label class="full">Tipo de Servicio</label>
+                    <input type="checkbox" value="ciberseguridad en empresa">Ciberseguridad en empresa
+                    <input type="checkbox" value="Ciberseguridad a particular">Ciberseguridad a particular
+                    <input type="checkbox" value="Mediana">Desarrollo Web
+                    <input type="checkbox" value="Grande">Consulta <br>(Atención al cliente)
+                  </p>
+                  <p class="full">
+                    <label>Mensaje</label>
+                    <textarea name="mensaje" required></textarea>
+                  </p>
+                  <p class="full">
+                    <button class="boton-enviar">Enviar</button>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+    </div>
+</div>
+    <!--Footer-->
+    <footer>
+        CIBERTEX @ 2022
+    </footer>
+</body>
+</html>
