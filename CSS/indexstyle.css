@@ -150,7 +150,7 @@ nav a:hover{
     background-color: rgb(184, 134, 11);
     border-radius: 50px;
     text-align: center;
-    font-size: 150%;
+    font-size: 1.2rem;
     margin-left: 5%;
     margin-top: 2%;
     width: 200px;
@@ -159,7 +159,7 @@ nav a:hover{
 .botonvermas:hover{
     transition: 0.4s;
     transform: scale(1.2);
-    box-shadow: 5px 5px 15px 5px rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
 }
 
 /*Etiquetas*/
@@ -202,6 +202,10 @@ nav a:hover{
     text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
 }
 
+.tarjeta1 p{
+    padding: 2%;
+}
+
 .tarjeta2{
     background-color: rgb(54, 83, 71);
     grid-area: tarjeta2;
@@ -218,6 +222,10 @@ nav a:hover{
 
 .tarjeta2 > h2{
     text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta2 p{
+    padding: 2%;
 }
 
 .tarjeta3{
@@ -237,6 +245,10 @@ nav a:hover{
     text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
 }
 
+.tarjeta3 p{
+    padding: 2%;
+}
+
 .tarjeta4{
     background-color: rgb(54, 83, 71);
     grid-area: tarjeta4;
@@ -252,6 +264,10 @@ nav a:hover{
 
 .tarjeta4 > h2{
     text-shadow: 0.6px 0.6px 0.8px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta4 p{
+    padding: 2%;
 }
 
 /*Parte 2*/
